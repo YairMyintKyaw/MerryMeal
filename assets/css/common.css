@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 /* reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -145,7 +145,7 @@ body {
 
 :root{
   --color-primary: #166534;
-
+  --color-grey: #D1D5DB;
 }
 
 /* breakpoint */
@@ -187,4 +187,65 @@ body {
     top: 0;
 
   }
+}
+
+/* button */
+.mobBtn{
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 44px;
+  border: none;
+  color: white;
+  background-color: var(--color-primary);
+}
+
+.mobSignInBtn{
+  padding: 12px 24px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 44px;
+  border: 1px solid var(--color-grey);
+  color: #262626;
+  background-color: transparent;
+  margin-right: 16px;
+}
+
+/* header */
+header section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid var(--color-grey);
+  border-radius: 48px;
+  padding: 10px;
+  margin: 5%;
+  max-width: 1360px;
+  box-sizing: border-box;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.logo{
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--color-primary);
+  margin-left: 20px;
+}
+
+.nav--Home{
+  color: var(--color-primary);
 }
