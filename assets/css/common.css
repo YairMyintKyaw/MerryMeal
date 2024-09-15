@@ -168,7 +168,7 @@ body {
 }
 
 .modSection{
-  max-width: 1400px;
+  max-width: 1360px;
   margin: 0 auto;
   padding: 0 min(5%, 65px);
 }
@@ -189,7 +189,7 @@ body {
   }
 }
 
-/* button */
+/* button */ 
 .mobBtn{
   padding: 12px 24px;
   font-weight: 500;
