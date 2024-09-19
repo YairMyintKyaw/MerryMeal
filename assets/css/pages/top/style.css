@@ -339,32 +339,73 @@ hr{
 
 /* Become A Part */
 .becomeAPartSection{
-    color: white;
-    height: 770px;
     background-image: url(/assets/img/pages/top/img_green_bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.becomeAPartSection--content{
+    color: white;
+    height: 770px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    max-width: 900px;
+    margin: auto;
 }
 
 .becomeAPart--description{
     font-size: 20px;
     font-weight: 500;
     text-align: right;
+    position: relative;
+}
+
+.becomeAPart--description::before{
+    content: "";
+    width: 40px;
+    height: auto;
+    display: inline-block;
+    top: -20px;
+    left: 0;
+    aspect-ratio: 1/1;
+    background-image: url(/assets/img/pages/top/img-new.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;   
 }
 
 .becomeAPart--title{
     font-size: 128px;
     font-weight: 700;
     text-align: center;
+    position: relative;
+}
+
+.becomeAPart--title::after{
+    content: "";
+    width: 270px;
+    height: auto;
+    display: inline-block;
+    bottom: -150px;
+    right: 50px;
+    aspect-ratio: 1/1;
+    background-image: url(/assets/img/pages/top/img_underline_spin.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;   
 }
 
 .BtnJoin{
+    margin: 0 auto;
+}
+
+.BtnJoin button{
     border: 1px solid white;
     color: white;
     margin-top: 90px;
+    text-align: center;
 }
 
