@@ -197,6 +197,10 @@ body {
     top: 0;
   }
 
+.modColorPrimary{
+  color: var(--color-primary);
+}
+
 /* button */ 
 .modBtn{
   padding: 12px 24px;
@@ -214,12 +218,12 @@ body {
   font-size: 18px;
   border-radius: 44px;
   background-color: transparent;
-  margin-right: 16px;
 }
 
 .modSignInBtn{
   border: 1px solid var(--color-grey);
   color: var(--color-black);
+  margin-right: 16px;
 }
 
 /* header */
@@ -230,7 +234,7 @@ header section{
   align-items: center;
   border: 1px solid var(--color-grey);
   border-radius: 48px;
-  padding: 10px;
+  padding: 10px 10px 10px 30px;
   margin: 50px auto;
   max-width: 1360px;
   box-sizing: border-box;
@@ -254,7 +258,6 @@ nav a{
   font-size: 20px;
   font-weight: 800;
   color: var(--color-primary);
-  margin-left: 20px;
 }
 
 .active{
@@ -293,4 +296,83 @@ nav a{
 .Counter--Description{
   font-size: 16px;
   font-weight: 500;
+}
+
+/* Green text in headings and paragraphs */
+.GreenText{
+    color: var(--color-primary);
+}
+
+.modFirstHeading{
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.modSecondHeading{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* footer */
+
+footer{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 0 96px;
+  margin: 80px;
+}
+
+.footer--section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer--first{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.socialMediaIcon{
+    display: flex;
+    gap: 32px;
+}
+
+.footer--link{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer--link a{
+    text-decoration: none;
+    color: var(--color-grey);
+}
+
+.footer--second--column{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer--second{
+    display: flex;
+    gap: 50px;
+}
+
+.copyright{
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  display: block;
+  text-align: center;
+}
+
+footer hr{
+  width: 100%;
+}
+
+.footer--link span{
+  color: var(--color-grey);
 }

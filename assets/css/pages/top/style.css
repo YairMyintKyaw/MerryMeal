@@ -27,17 +27,14 @@
 }
 
 .beTheChange{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    gap: 64px;
 }
 
 .beTheChange--heading{
-    font-size: 30px;
-    font-weight: 700;
     margin-bottom: 36px;
-}
-
-.beTheChange--heading span{
-    color: var(--color-primary);
 }
 
 .beTheChange--description{
@@ -49,5 +46,325 @@
 .outlineBtnGreen{
     border: 1px solid var(--color-primary);
     color: var(--color-primary);
+}
+
+.beTheChange--card{
+    display: flex;
+    flex-direction: column;
+    max-width: 326px;
+    gap: 32px;
+    padding: 32px 36px;
+    border: 0.5px solid var(--color-grey);
+    border-radius: 30px;
+    box-sizing: border-box;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.25);
+}
+
+.beTheChange--card--title{
+    font-size: 24px;
+    font-weight: 500;  
+}
+
+.beTheChange--card::before{
+    content: "";
+    width: 50px;
+    height: auto;
+    display: inline-block;
+    top: 0; 
+    aspect-ratio: 1/1;
+    background-image: url("/assets/img/pages/top/img_volunteer.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+}
+
+.beTheChange--card--donation::before{
+    background-image: url("/assets/img/pages/top/img_heart.svg");
+}
+
+.beTheChange--card--description{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.beTheChange--card--container{
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Shre With Others */
+
+.ShareWithOthersCard--Container{
+    position: relative;
+    z-index: 1;
+}
+
+.ShareWithOthersCard--Container::before{
+    content: "";
+    width: 205px;
+    height: 205px;
+    /* display: inline-block; */
+    /* position: absolute; */
+    background-image: url("/assets/img/pages/top/img_spot_square.svg");
+    top: -100px;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 0;
+}
+
+.ShareWithOthersCard{
+    display: flex;
+    width: 1130px;
+    gap: 40px;
+    justify-content: space-around;
+    box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.25);
+    align-items: center;
+    margin: auto;
+    padding: 40px;
+    border-radius: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.ShareWithOthersCard--textSide{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 527px;
+}
+
+.ShareWithOthersCard--description{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.bar--text{
+    color: #737373;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bar{
+    width: 527px;
+    height: 13px;
+    border-radius: 6px;
+    background-color: #E5E7EB;
+}
+
+.bar::after{
+    content: "";
+    width: 256.38px;
+    height: 13px;
+    border-radius: 6px;
+    background-color: #166534;
+    position: absolute;
+}
+
+.ShareWithOthersCard--img{
+    width: 480px;
+    height: auto;
+}
+
+.ShareWithOthersCard--img img{
+    width: 100%;
+    height: 100%;
+}
+
+.ShareWithOthersCard::after{
+    content: "";
+    width: 142px;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    background-image: url("/assets/img/pages/top/img_CTA.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50px,-25px);
+}
+
+.ShareWithOthersCard::before{
+    content: "";
+    width: 142px;
+    aspect-ratio: 1/1;
+    display: inline-block;
+    background-image: url("/assets/img/pages/top/img_green-spin.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100px,-90px);
+}
+
+/* How to Start Help */
+.howToStartCard h3{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.howToStartCard div{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.howToStartHelp_Section{
+    background-color: var(--color-primary);
+    color: white;
+    padding: 60px 80px;
+    border-radius: 30px;
+    text-align: center;
+    max-width: 1130px;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    margin: 153px auto 0 auto;
+}
+
+.howToStartCard{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 24px;
+}
+
+.howToStartCard::before{
+    content: "";
+    width: 52px;
+    height: auto;
+    display: inline-block;
+    top: 0; 
+    aspect-ratio: 1/1;
+    background-image: url("/assets/img/pages/top/ph_users.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: auto;
+}
+
+.howToStartCard--roles::before{
+    background-image: url("/assets/img/pages/top/ph_hands-clapping.svg");
+}
+
+.howToStartCard--share::before{
+    background-image: url("/assets/img/pages/top/ph_smiley.svg");
+}
+
+.howToStartCard--Container{
+    display: flex;
+    gap: 163px;
+    justify-content: space-between;
+}
+
+.howToStartCard--description{
+    line-height: 24px;
+}
+
+/* Join US For Better Future */
+
+.JoinUSImg{
+    width: 482.56px;
+    height: 439.75px;
+}
+
+.JoinUSImg img{
+    width: 100%;
+    height: 100%;
+}
+
+.JoinUSText--description{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.JoinUSText{
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.FAQ--text{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.FAQ--Ans{
+    color: var(--color-grey);
+}
+
+.JoinUsSection{
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    margin: 135px 0;
+    justify-content: center;
+}
+
+hr{
+    color: var(--color-grey);
+}
+
+.FAQ--item{
+    position: relative;
+}
+
+.FAQ--item::after{
+    content: "";
+    width: 24px;
+    height: auto;
+    display: inline-block;
+    top: 0;
+    right: 0;
+    aspect-ratio: 1/1;
+    background-image: url(/assets/img/pages/top/icon_minus.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: absolute;
+}
+
+.FAQ-icon-plus::after{
+    background-image: url(/assets/img/pages/top/icon_plus.svg);
+}
+
+/* Become A Part */
+.becomeAPartSection{
+    color: white;
+    height: 770px;
+    background-image: url(/assets/img/pages/top/img_green_bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.becomeAPart--description{
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+}
+
+.becomeAPart--title{
+    font-size: 128px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.BtnJoin{
+    border: 1px solid white;
+    color: white;
+    margin-top: 90px;
 }
 
